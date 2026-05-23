@@ -1,0 +1,17 @@
+/* ── Add this block to the BOTTOM of src/components/styles/Work.css ── */
+
+/* Project description text inside work boxes */
+.work-description {
+  font-size: 12px;
+  font-weight: 300;
+  color: #8a8a8a;
+  margin-top: 10px;
+  line-height: 1.5;
+  width: 90%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .work-description {
+    font-size: 11px;
+  }
+}
