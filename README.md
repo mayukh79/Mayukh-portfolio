@@ -114,7 +114,7 @@ To test out the portfolio website locally on your own machine:
    ```bash
    npm run dev
    ```
-   *The project will spin up at [http://localhost:5173/](http://localhost:5173/) (or the next available port).*
+   *The project is deployed at https://mayukh-portfolio.vercel.app/*
 
 ---
 
