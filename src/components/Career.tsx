@@ -12,20 +12,7 @@ const Career = () => {
           <div className="career-timeline">
             <div className="career-dot"></div>
           </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>B.Tech  CSE (AIML)</h4>
-                <h5>BBDITM , Lucknow</h5>
-              </div>
-              <h3>2023-2027</h3>
-            </div>
-            <p>
-              Specialising in Artificial Intelligence & Machine Learning.
-              Building a strong foundation in backend systems, data structures,
-              and software engineering alongside core CS coursework.
-            </p>
-          </div>
+          
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
@@ -43,6 +30,34 @@ const Career = () => {
             </p>
           </div>
         </div>
+        <div className="career-info-box">
+  <div className="career-info-in">
+    <div className="career-role">
+      <h4>Vice President</h4>
+      <h5>Binary Brains, BBDITM</h5>
+    </div>
+    <h3>September 2025 – Present</h3>
+  </div>
+  <p>
+    Leading the official technical club of BBDITM by organizing technical
+    events, hackathons, coding workshops, and mentoring student teams while
+    fostering a collaborative developer community.
+  </p>
+</div>
+        <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>B.Tech  CSE (AIML)</h4>
+                <h5>BBDITM , Lucknow</h5>
+              </div>
+              <h3>2023-2027</h3>
+            </div>
+            <p>
+              Specialising in Artificial Intelligence & Machine Learning.
+              Building a strong foundation in backend systems, data structures,
+              and software engineering alongside core CS coursework.
+            </p>
+          </div>
       </div>
     </div>
   );

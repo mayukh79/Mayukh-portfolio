@@ -14,14 +14,18 @@ import {
 // ── Your actual tech stack ────────────────────────────────────────────────────
 // Drop matching .webp icons into public/images/ with these exact names.
 const TECH_ITEMS = [
-  { url: "/images/python.webp" },
-  { url: "/images/django.webp" },
+  { url: "/images/python-plain.webp" },
+  { url: "/images/django-plain.webp" },
   { url: "/images/react2.webp" },
   { url: "/images/javascript.webp" },
-  { url: "/images/git.webp" },
-  { url: "/images/github.webp" },
   { url: "/images/mysql.webp" },
-  { url: "/images/linux.webp" },
+  { url: "/images/next2.webp" },
+  { url: "/images/mongo.webp" },
+  { url: "/images/express.webp" },
+  { url: "/images/nextBL.webp" },
+  { url: "/images/node2.webp" },
+  { url: "/images/typescript.webp" },
+  { url: "/images/github.webp" },
 ];
 
 // Pre-load textures once — outside component so they survive re-renders
@@ -36,23 +40,23 @@ const textures = TECH_ITEMS.map(({ url }) => {
 const sphereGeometry = new THREE.SphereGeometry(1, 32, 32);
 
 // 28 spheres total
-const SPHERE_COUNT = 28;
+const SPHERE_COUNT = 35;
 const spheres = Array.from({ length: SPHERE_COUNT }, (_, i) => {
   let materialIndex;
-  
+
   // Heavily focus on Python (0) and Django (1)
-  if (i < 12) {
-    // 6 pythons, 6 djangos
+  if (i < 8) {
+    // 4 pythons, 4 djangos
     materialIndex = i % 2;
   } else {
-    // 16 remaining balls divided among other 6 technologies
+    // 27 remaining balls divided among other 6 technologies
     materialIndex = 2 + (i % 6);
   }
 
   let scale;
   if (materialIndex === 0 || materialIndex === 1) {
     // Python and Django are up to 60% larger and highly visible
-    scale = [1.3, 1.45, 1.6][Math.floor(Math.random() * 3)];
+    scale = [1.1, 1.3, 1.5][Math.floor(Math.random() * 3)];
   } else {
     // Others are pushed slightly to the background
     scale = [0.65, 0.75, 0.9][Math.floor(Math.random() * 3)];
